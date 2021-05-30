@@ -1,0 +1,13 @@
+List of packages to be installed:
+1)speech_recognition- for recognising speech given into the program.
+2)chatterbot- the ML model to get intelligent response to the user's queries.
+3)pyttsx3- for converting the bot's response from text to speech and adding a voice to it.
+
+API used:
+1)recognise_google- to recognise the voice.
+
+challenges:
+1)chatterbot has a module time has no attribute clock error in python versions 3.8 and higher,this is because time.clock is deprecated from python 3.8,this can be solved by replacing time.clock with time.time in the compat.py file in the site-packages folder
+link to stackoverflow solution-https://stackoverflow.com/questions/58569361/attributeerror-module-time-has-no-attribute-clock-in-python-3-8/62108504
+
+2)recognise_google sometimes throws a unknown value error. This happens because the voice was not picked up properly by the mic and it can be solved by removing ambient noise or speaking more clearly.
