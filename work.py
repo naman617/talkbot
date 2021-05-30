@@ -8,7 +8,7 @@ from chatterbot.trainers import ChatterBotCorpusTrainer  # to train chatbot
 bot = ChatBot('talkbot')
 bot.set_trainer(ChatterBotCorpusTrainer)  # Setting the trainer
 # Training the chatBot on the corpus data
-# bot.train('chatterbot.corpus.english')
+bot.train('chatterbot.corpus.english')
 
 
 while(True):  # Interaction itself with the bot
